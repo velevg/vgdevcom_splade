@@ -3,8 +3,10 @@
         {{ __('Portfolio') }}
     </x-slot>
 
-    <x-panel class="flex flex-col items-center pt-16 pb-16">
+    {{-- <x-project-card :project="$project" /> --}}
 
+    <x-panel>
+        <x-project-card />
     </x-panel>
 
 </x-layout>

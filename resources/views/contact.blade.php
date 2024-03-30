@@ -3,8 +3,8 @@
         {{ __('Contact') }}
     </x-slot>
 
-    <x-panel class="flex flex-col items-center pt-16 pb-16">
-
+    <x-panel>
+        <x-contact-form />
     </x-panel>
 
 </x-layout>

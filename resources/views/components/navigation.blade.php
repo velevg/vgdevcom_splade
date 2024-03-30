@@ -94,7 +94,7 @@
                             @endauth
                         @endif
 
-                        <div class="flex flex-col justify-center ml-3 damn">
+                        <div class="flex flex-col justify-center ml-3 theme">
                             <input type="checkbox" name="light-switch" class="light-switch sr-only" />
                             <label class="relative cursor-pointer p-2" for="light-switch">
                                 <svg class="dark:hidden" width="16" height="16"
@@ -111,7 +111,13 @@
                                     <path class="fill-slate-500"
                                         d="M12.5 5a.625.625 0 0 1-.625-.625 1.252 1.252 0 0 0-1.25-1.25.625.625 0 1 1 0-1.25 1.252 1.252 0 0 0 1.25-1.25.625.625 0 1 1 1.25 0c.001.69.56 1.249 1.25 1.25a.625.625 0 1 1 0 1.25c-.69.001-1.249.56-1.25 1.25A.625.625 0 0 1 12.5 5Z" />
                                 </svg>
-                                {{-- <span class="sr-only">Switch to light / dark version</span> --}}
+                            </label>
+                        </div>
+
+                        <div class="flex flex-col justify-center lang">
+                            <input type="checkbox" name="lang-switch" class="lang-switch sr-only" />
+                            <label class="relative cursor-pointer dark:text-slate-300 lang_label" for="lang-switch">
+                                BG
                             </label>
                         </div>
 
@@ -216,7 +222,7 @@
                     @endauth
                 </div>
 
-                <div class="damn block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out dark:text-slate-300 hover:dark:bg-slate-900">
+                <div class="theme block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out dark:text-slate-300 hover:dark:bg-slate-900">
                     <div class="flex flex-col justify-center ml-3 hover:dark:bg-slate-900">
                         <input type="checkbox" name="light-switch" class="light-switch sr-only" />
                         <label class="relative cursor-pointer p-1" for="light-switch">
@@ -235,6 +241,13 @@
                             <span class="sr-only">Switch to light / dark version</span>
                         </label>
                     </div>
+                </div>
+
+                <div class="flex-col justify-center block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out dark:text-slate-300 hover:dark:bg-slate-900 lang">
+                    <input type="checkbox" name="lang-switch" class="lang-switch sr-only" />
+                    <label class="relative cursor-pointer dark:text-slate-300 lang_label ms-3" for="lang-switch">
+                        BG
+                    </label>
                 </div>
 
             </div>
